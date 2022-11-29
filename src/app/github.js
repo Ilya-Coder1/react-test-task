@@ -1,8 +1,6 @@
 import { Octokit } from '@octokit/core'
 import { restEndpointMethods } from '@octokit/plugin-rest-endpoint-methods'
-import { paginateRest } from '@octokit/plugin-paginate-rest'
 
-const forksPerRequest = 30;
 const octokit = getOctokit();
 
 function getOctokit() {
