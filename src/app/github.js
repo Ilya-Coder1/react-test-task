@@ -5,7 +5,7 @@ const octokit = getOctokit();
 
 function getOctokit() {
   const MyOctokit = Octokit.plugin(restEndpointMethods);
-  return new MyOctokit({auth: "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"});
+  return new MyOctokit();
 }
 
 async function getForksList({ owner, repo }, page, forksInPage) {
